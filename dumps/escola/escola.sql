@@ -11,7 +11,12 @@ CREATE TABLE IF NOT EXISTS `alunos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Limpa os registros existentes para evitar duplicação ao rodar novamente
+TRUNCATE TABLE `alunos`;
+
 INSERT INTO `alunos` (`id`, `nome`, `curso`) VALUES
-(1, 'Lucas Silva', 'Informática'),
-(2, 'Beatriz Souza', 'Administração'),
-(3, 'Carlos Eduardo', 'Eletrônica');
+(1, 'Lucas Silva', 'Informatica'),
+(2, 'Beatriz Souza', 'Administracao'),
+(3, 'Carlos Eduardo', 'Eletronica');
+
+SELECT * FROM alunos;
